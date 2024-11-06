@@ -299,16 +299,16 @@ useEffect(()=>{
        
         <Footer/>
 
-        <div className="scroll-to-top">
-          <div>
-            <div className="scroll-top-inner">
-              <div className="scroll-bar">
-                <div className="bar-inner"></div>
-              </div>
-              <div className="scroll-bar-text">Go To Top</div>
-            </div>
-          </div>
-        </div>
+        <div className="scroll-to-top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ cursor: 'pointer' }}>
+  <div>
+    <div className="scroll-top-inner">
+      <div className="scroll-bar">
+        <div className="bar-inner"></div>
+      </div>
+      <div className="scroll-bar-text">Go To Top</div>
+    </div>
+  </div>
+</div>
       </div>
         
 

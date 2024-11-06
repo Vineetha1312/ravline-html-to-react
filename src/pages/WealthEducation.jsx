@@ -1,10 +1,11 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 
 export default function WealthEducation() {
     const [isLoading,setIsLoading]=useState(true);
@@ -14,6 +15,16 @@ export default function WealthEducation() {
         setIsLoading(false)
     }, 2000);
     },[])
+    const owlCarouselRef = useRef(null);
+      
+    const goToPrev = () => {
+         owlCarouselRef.current.prev();
+     };
+      
+        const goToNext = () => {
+          owlCarouselRef.current.next();
+        };
+      
   return (
     <div>
 
@@ -152,11 +163,17 @@ export default function WealthEducation() {
         </div>
     </section> */}
     {/* testimonial-section end */}
-        <section className="testimonial-section" style={{ padding: '120px 0', backgroundColor: '#1A1A2E' }}>
+    <section
+      className="testimonial-section"
+      style={{ padding: '120px 0', backgroundColor: '#1A1A2E' }}
+    >
       <div className="auto-container">
         <div className="row">
           <div className="col-lg-4 col-md-12 title-column">
-            <div className="sec-title light" style={{ color: '#A6A867', textAlign:'center' }}>
+            <div
+              className="sec-title light"
+              style={{ color: '#A6A867', textAlign: 'center' }}
+            >
               <span
                 className="sub-title mb_16"
                 style={{
@@ -166,7 +183,7 @@ export default function WealthEducation() {
                   textTransform: 'uppercase',
                   display: 'block',
                   marginBottom: '10px',
-                  width: 'fit-content'
+                  width: 'fit-content',
                 }}
               >
                 Testimonials
@@ -178,29 +195,125 @@ export default function WealthEducation() {
                   fontWeight: 'bold',
                   lineHeight: '1.3',
                   marginBottom: '30px',
-                  textAlign:'left',
-                  marginTop:'30px'
+                  textAlign: 'left',
+                  marginTop: '30px',
                 }}
               >
                 What They’re Talking About Company?
               </h2>
               <div style={{ display: 'flex', gap: '15px', marginTop: '20px' }}>
-                <button style={{
-                  width: '50px', height: '50px', borderRadius: '50%', background: 'transparent', border: '2px solid #A6A867', color: '#A6A867', fontSize: '1.2rem', display: 'flex', alignItems: 'center', justifyContent: 'center'
-                }}>
+                <button
+                  onClick={goToPrev}
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    borderRadius: '50%',
+                    background: 'transparent',
+                    border: '2px solid #A6A867',
+                    color: '#A6A867',
+                    fontSize: '1.2rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
                   &#8592;
                 </button>
-                <button style={{
-                  width: '50px', height: '50px', borderRadius: '50%', background: 'transparent', border: '2px solid #A6A867', color: '#A6A867', fontSize: '1.2rem', display: 'flex', alignItems: 'center', justifyContent: 'center'
-                }}>
+                <button
+                  onClick={goToNext}
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    borderRadius: '50%',
+                    background: 'transparent',
+                    border: '2px solid #A6A867',
+                    color: '#A6A867',
+                    fontSize: '1.2rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
                   &#8594;
                 </button>
               </div>
             </div>
           </div>
+          {/* <div className="col-lg-8 col-md-12 content-column">
+            <OwlCarousel
+              ref={owlCarouselRef}
+              className="owl-theme"
+              loop
+              margin={20}
+              nav={false}
+              items={1}
+              dots={false}
+              autoplay={true}
+              autoplayTimeout={5000}
+              autoplayHoverPause={true}
+            >
+              <div className="testimonial-block-one">
+                <div className="inner-box">
+                  <div className="text">
+                    <div className="quote">
+                      <img
+                        src="assets/images/icons/icon-25.png"
+                        alt=""
+                        style={{ width: '50px', height: '50px' }}
+                      />
+                    </div>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s
+                    </p>
+                  </div>
+                  <div className="author-box">
+                    <figure className="author-thumb">
+                      <img
+                        src="assets/images/resource/testimonial-1.png"
+                        alt=""
+                      />
+                    </figure>
+                    <h5>Robert Mick</h5>
+                    <span className="designation">Customer</span>
+                  </div>
+                </div>
+              </div>
+              <div className="testimonial-block-one">
+                <div className="inner-box">
+                  <div className="text">
+                    <div className="quote">
+                      <img
+                        src="assets/images/icons/icon-25.png"
+                        alt=""
+                        style={{ width: '50px', height: '50px' }}
+                      />
+                    </div>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s
+                    </p>
+                  </div>
+                  <div className="author-box">
+                    <figure className="author-thumb">
+                      <img
+                        src="assets/images/resource/testimonial-2.png"
+                        alt=""
+                      />
+                    </figure>
+                    <h5>Marray Joe</h5>
+                    <span className="designation">Customer</span>
+                  </div>
+                </div>
+              </div>
+            </OwlCarousel>
+          </div> */}
           <div className="col-lg-8 col-md-12 content-column">
             <OwlCarousel
               className="owl-theme"
+              ref={owlCarouselRef}
               loop
               margin={20}
               nav
@@ -327,16 +440,16 @@ export default function WealthEducation() {
 
 
         {/*Scroll to top*/}
-        <div className="scroll-to-top">
-            <div>
-                <div className="scroll-top-inner">
-                    <div className="scroll-bar">
-                        <div className="bar-inner"></div>
-                    </div>
-                    <div className="scroll-bar-text">Go To Top</div>
-                </div>
-            </div>
-        </div></div>
+        <div className="scroll-to-top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ cursor: 'pointer' }}>
+  <div>
+    <div className="scroll-top-inner">
+      <div className="scroll-bar">
+        <div className="bar-inner"></div>
+      </div>
+      <div className="scroll-bar-text">Go To Top</div>
+    </div>
+  </div>
+</div></div>
 
 
         

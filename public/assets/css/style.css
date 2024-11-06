@@ -639,7 +639,64 @@ img {
 .scroll-to-top .scroll-bar-text:hover{
   transform: scale(1.1);
 }
+.scroll-to-top {
+  position: fixed;
+  right: 0px;
+  bottom: 100px;
+  transform: rotate(90deg);
+  z-index: 99;
+  cursor: pointer;
+}
 
+.scroll-to-top.visible {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.scroll-to-top .scroll-top-inner {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+.scroll-to-top .scroll-bar {
+  width: 50px;
+  height: 2px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.scroll-to-top .scroll-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #57b2ec;
+  opacity: 0.3;
+}
+
+.scroll-to-top .scroll-bar .bar-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: currentColor;
+}
+
+.scroll-to-top .scroll-bar-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--theme-color, #007bff); /* Default color if theme color is not set */
+  transition: all 500ms ease;
+}
+
+.scroll-to-top .scroll-bar-text:hover {
+  transform: scale(1.1);
+}
 
 
 @-webkit-keyframes ripple {
