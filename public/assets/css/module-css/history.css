@@ -1,0 +1,149 @@
+
+/** history-section **/
+
+.history-section{
+  position: relative;
+}
+
+.history-section .upper-box{
+  position: relative;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.history-section .upper-box .image-box .image{
+  position: relative;
+  display: block;
+  border-radius: 10px;
+}
+
+.history-section .upper-box .image-box .image img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.history-section .upper-box .content-box .text-box p:first-child{
+  font-size: 20px;
+  font-weight: 500;
+  color: #111e37;
+  margin-bottom: 8px;
+}
+
+.history-section .upper-box .content-box .text-box p{
+  margin-bottom: 28px;
+}
+
+.history-section .upper-box .content-box .text-box p:last-child{
+  margin-bottom: 0px;
+}
+
+.history-section .upper-box .content-box .lower-content{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.history-section .upper-box .content-box .lower-content h3{
+  position: relative;
+  max-width: 530px;
+  font-size: 22px;
+  line-height: 32px;
+  font-family: var(--text-font);
+  color: #0b1d35;
+}
+
+.history-section .lower-box .image-box{
+  max-width: 830px;
+}
+
+.history-section .lower-box .image-box .image{
+  position: relative;
+  display: block;
+  border-radius: 10px;
+}
+
+.history-section .lower-box .image-box .image img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.history-section .history-block{
+  position: relative;
+  display: block;
+  padding: 0px 0px 0px 170px;
+  margin-bottom: 63px;
+}
+
+.history-section .history-block .year{
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  top: 5px;
+  width: 108px;
+  height: 108px;
+  line-height: 108px;
+  border: 2px solid #d6d6d6;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #051d3e;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.history-section .history-block .year:before{
+  position: absolute;
+  content: '';
+  background: #d2d2d2;
+  width: 1px;
+  height: 123px;
+  left: 52px;
+  top: 105px;
+}
+
+.history-section .history-block:nth-child(4) .year:before{
+  display: none;
+}
+
+.history-section .history-block h2{
+  position: relative;
+  display: block;
+  font-size: 34px;
+  line-height: 40px;
+  color: #111e37;
+  margin-bottom: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

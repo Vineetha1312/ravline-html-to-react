@@ -1,0 +1,174 @@
+
+/** clients-section **/
+
+.clients-section{
+  position: relative;
+}
+
+.clients-list{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients-section .sec-title{
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.clients-section .sec-title:before{
+  position: absolute;
+  content: '';
+  background: #d5d4d3;
+  width: 5000px;
+  height: 1px;
+  left: 280px;
+  bottom: 13px;
+}
+
+.clients-list .clients-logo{
+  position: relative;
+  display: block;
+}
+
+.clients-list .clients-logo img{
+  position: relative;
+  transition: all 500ms ease;
+}
+
+.clients-list .clients-logo img:hover{
+  transform: scale(1.05);
+}
+
+.clients-section.home-5{
+  background: #111b2a;
+}
+
+
+/** clients-style-two **/
+
+.clients-style-two{
+  position: relative;
+  background: #0d1330;
+}
+
+.clients-style-two .title-box:before{
+  position: absolute;
+  content: '';
+  background: rgba(255, 255, 255, 0.15);
+  width: 100%;
+  height: 1px;
+  left: 0px;
+  top: 16px;
+}
+
+.clients-style-two .title-text{
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: var(--special-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  padding: 0px 18px;
+  background: #0d1330;
+  z-index: 1;
+  margin-bottom: 73px;
+}
+
+.clients-style-two.home-13{
+  background: #eff2f5;
+}
+
+.clients-style-two.home-13 .title-text{
+  background: #eff2f5;
+}
+
+.clients-style-two.home-13 .title-box:before{
+  background: #d5d4d3;
+}
+
+
+/** clients-style-three **/
+
+.clients-style-three{
+  position: relative;
+  background: #0e112e;
+}
+
+.clients-style-three .clients-box li{
+  position: relative;
+  display: block;
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 62px 0px 67px 0px;
+  border-right: 2px solid #272b4f;
+}
+
+.clients-style-three .clients-box li:last-child{
+  border-right: none;
+}
+
+.clients-style-three .clients-box .clients-logo{
+  position: relative;
+  display: block;
+  min-height: 72px;
+  margin-bottom: 10px;
+}
+
+.clients-style-three .clients-box p{
+  display: block;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #9aa4b3;
+}
+
+.clients-style-two.home-23,
+.clients-style-two.home-23 .title-text{
+  background: #f4f4f4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

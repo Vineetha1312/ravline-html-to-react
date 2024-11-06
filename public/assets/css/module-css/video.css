@@ -1,0 +1,356 @@
+
+/** video-section **/
+
+.video-section{
+  position: relative;
+  padding: 110px 0px 120px 0px;
+}
+
+.video-section .bg-layer{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.video-section .bg-layer:before{
+  position: absolute;
+  content: '';
+  background: #000;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.30;
+}
+
+.video-section .content-box{
+  position: relative;
+  display: block;
+}
+
+.video-section .content-box .sub-title{
+  color: #fff;
+  padding-left: 96px;
+}
+
+.video-section .content-box .sub-title:before{
+  background: #fff;
+  width: 83px;
+}
+
+.video-section .content-box .inner-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.video-section .content-box .video-btn h6{
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: var(--special-font);
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 17px 0px 17px 100px;
+}
+
+.video-section .content-box .video-btn h6 a{
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  top: 0px;
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.video-section .title-box span{
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: var(--special-font);
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  padding-right: 57px;
+  margin-bottom: 15px;
+}
+
+.video-section .title-box span:before{
+  position: absolute;
+  content: '';
+  background: #fff;
+  width: 45px;
+  height: 2px;
+  right: 0px;
+  bottom: 6px;
+}
+
+.video-section .title-box h2{
+  display: block;
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.video-section .video-inner{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.video-section .video-inner .theme-btn{
+  color: #fff;
+  border-color: #dbdcdd;
+  padding: 13px 27px 11px 37px;
+}
+
+.video-section .video-inner .theme-btn:hover{
+  background: #fff;
+}
+
+.video-section .video-inner .video-btn a{
+  position: relative;
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  line-height: 58px;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.video-section .video-inner .video-btn a:before,
+.video-section .video-inner .video-btn a:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation-delay: .9s;
+  animation-delay: .9s;
+  content: "";
+  position: absolute;
+  -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+  -webkit-animation: ripple 3s infinite;
+  animation: ripple 3s infinite;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.video-section .video-inner .video-btn a:after{
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+}
+
+
+/** video-style-two **/
+
+.video-style-two{
+  position: relative;
+  background: #1d2532;
+  padding: 111px 0px 100px 0px;
+}
+
+.video-style-two .content-box{
+  position: relative;
+  display: block;
+}
+
+.video-style-two .content-box h2{
+  position: relative;
+  display: block;
+  font-size: 47px;
+  line-height: 56px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(119, 120, 120, 0.30);
+}
+
+.video-style-two .content-box .funfact-inner{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video-style-two .video-inner{
+  position: relative;
+  display: block;
+  margin-left: 148px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-style-two .video-inner .video-box{
+  position: relative;
+  width: 100%;
+  padding: 80px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.video-style-two .video-inner .video-box:before{
+  position: absolute;
+  content: '';
+  background: #000;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0.3;
+}
+
+.video-style-two .video-inner .video-box a{
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.video-style-two .video-inner .video-box a:before,
+.video-style-two .video-inner .video-box a:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation-delay: .9s;
+  animation-delay: .9s;
+  content: "";
+  position: absolute;
+  -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+  -webkit-animation: ripple 3s infinite;
+  animation: ripple 3s infinite;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.video-style-two .video-inner .video-box a:after{
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+}
+
+.video-style-two .video-inner .video-content{
+  position: relative;
+  padding: 36px 20px;
+}
+
+.video-style-two .video-inner .video-content h3{
+  display: block;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: var(--text-font);
+  color: #000;
+  font-weight: 700;
+}
+
+.video-section.home-21 .content-box .sub-title{
+  padding-left: 0px;
+  padding-right: 120px;
+}
+
+.video-section.home-21 .content-box .sub-title:before{
+  left: inherit;
+  right: 0px;
+  width: 110px;
+  height: 1px;
+  top: 16px;
+}
+
+.video-section.service-page-3 .sec-title .sub-title{
+  padding: 0px;
+}
+
+.video-section.service-page-3 .sec-title .sub-title:before{
+  display: none;
+}
+
+.video-section.service-page-3 .sec-title .video-btn{
+  position: absolute;
+  right: 34px;
+  bottom: 28px;
+}
+
+.video-section.service-page-3 .sec-title h2{
+  font-size: 56px;
+  line-height: 72px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

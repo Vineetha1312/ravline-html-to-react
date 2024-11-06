@@ -1,0 +1,122 @@
+
+/** page-title **/
+
+.page-title{
+  position: relative;
+  padding: 226px 0px 134px 0px;
+}
+
+.page-title .bg-layer{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-title .pattern-layer{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.page-title .content-box{
+  position: relative;
+  display: block;
+}
+
+.page-title .content-box h1{
+  font-size: 60px;
+  line-height: 70px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.page-title .content-box .bread-crumb{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.page-title .content-box .bread-crumb li{
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  margin-right: 30px;
+}
+
+.page-title .content-box .bread-crumb li:last-child{
+  margin-right: 0px;
+  color: #afaf7c;
+}
+
+.page-title .content-box .bread-crumb li:before{
+  position: absolute;
+  content: '/';
+  top: 1px;
+  right: -19px;
+}
+
+.page-title .content-box .bread-crumb li:last-child:before{
+  display: none;
+}
+
+.page-title .content-box .bread-crumb li a{
+  display: inline-block;
+  color: #fff;
+}
+
+.page-title .content-box .bread-crumb li a:hover{
+
+}
+
+.page-title .image-layer{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

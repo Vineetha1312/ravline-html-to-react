@@ -1,0 +1,86 @@
+
+/** vision-section **/
+
+.vision-section{
+  position: relative;
+  background: #111b2a;
+  padding: 130px 0px 100px 0px;
+}
+
+.vision-section .text-box p{
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  max-width: 590px;
+  margin-bottom: 38px;
+}
+
+.vision-section .text-box p:last-child{
+  margin-bottom: 0px;
+  color: #c8c8c8;
+}
+
+.vision-section .text-box p a{
+  color: #c8c8c8;
+  text-decoration: underline;
+}
+
+.vision-section .text-box p a:hover{
+  color: #fd4a36;
+}
+
+.vision-section .sub-title{
+  margin-bottom: 12px;
+}
+
+.vision-section .image-box{
+  position: relative;
+  display: block;
+  margin-right: -76px;
+}
+
+.vision-section .image-box img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

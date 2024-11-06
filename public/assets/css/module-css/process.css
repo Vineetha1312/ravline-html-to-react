@@ -1,0 +1,67 @@
+
+/** process-section **/
+
+.process-section{
+  position: relative;
+  background: #09376b;
+}
+
+.processing-block-one .inner-box{
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  max-width: 300px;
+}
+
+.processing-block-one .inner-box .icon-box{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.processing-block-one .inner-box h3{
+  display: block;
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+  margin-bottom: 23px;
+}
+
+.processing-block-one .inner-box p{
+  color: #fff;
+  line-height: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

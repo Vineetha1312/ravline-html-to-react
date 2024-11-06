@@ -1,0 +1,90 @@
+
+.funfact-block-one .inner-box{
+  position: relative;
+  display: block;
+  padding: 0px 0px 0px 94px;
+}
+
+.funfact-block-one .inner-box .icon-box{
+  position: absolute;
+  left: 0px;
+  top: 14px;
+}
+
+.funfact-block-one .inner-box .count-outer{
+  position: relative;
+  display: block;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin-bottom: 8px;
+}
+
+.funfact-block-one .inner-box h5{
+  display: block;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: var(--text-font);
+  font-weight: 600;
+}
+
+.funfact-block-two{
+  position: relative;
+  display: block;
+}
+
+.funfact-block-two .count-outer{
+  position: relative;
+  display: block;
+  font-size: 150px;
+  line-height: 110px;
+  font-family: var(--text-font);
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #a5a8ad;
+  margin-bottom: 35px;
+}
+
+.funfact-block-two h4{
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: var(--text-font);
+  color: #fff;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

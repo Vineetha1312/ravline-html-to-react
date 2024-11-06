@@ -1,0 +1,84 @@
+
+/** location-section **/
+
+.location-section{
+  position: relative;
+}
+
+.location-section .inner-container{
+  position: relative;
+  padding: 115px 0px;
+  border-bottom: 1px solid #dddfe3;
+}
+
+.location-section .list-item li{
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.location-section .list-item li:last-child{
+  margin-bottom: 0px;
+}
+
+.location-section .list-item li a{
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  color: #090d30;
+}
+
+.location-section .list-item li a:hover{
+
+}
+
+.location-section .pattern-layer{
+  position: absolute;
+  top: 0px;
+  right: 75px;
+  width: 936px;
+  height: 401px;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

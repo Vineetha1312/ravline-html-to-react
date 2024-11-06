@@ -1,0 +1,623 @@
+
+/** contact-section **/
+
+.contact-section{
+  position: relative;
+  padding: 110px 0px 120px 0px;
+}
+
+.contact-section .content-box{
+  position: relative;
+  display: block;
+  padding-right: 10px;
+}
+
+.contact-section .content-box p{
+  font-size: 18px;
+  line-height: 28px;
+  color: #444;
+  margin-bottom: 59px;
+}
+
+.contact-section .content-box span.text{
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 26px;
+  font-family: var(--roboto);
+  color: #000000;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+.contact-section .content-box h3{
+  position: relative;
+  display: block;
+  font-size: 55px;
+  line-height: 65px;
+  font-family: var(--text-font);
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.contact-section .content-box h3 a{
+  display: inline-block;
+  color: #051d3e;
+}
+
+.contact-section .content-box h3 a:hover{
+  
+}
+
+.contact-section .content-box .inner-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.contact-section .content-box .inner-box .single-item{
+  position: relative;
+  display: block;
+  margin-right: 80px;
+}
+
+.contact-section .content-box .inner-box .single-item:last-child{
+  margin: 0px !important;
+}
+
+.contact-section .content-box .inner-box .single-item h5{
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: var(--special-font);
+  color: #8c8c8c;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.contact-section .content-box .inner-box .single-item p{
+  color: #444;
+  line-height: 26px;
+  margin-bottom: 0px;
+}
+
+.contact-section .content-box .inner-box .single-item p a{
+  display: inline-block;
+  color: #444;
+}
+
+.contact-section .content-box .inner-box .single-item p a:hover{
+
+}
+
+.contact-section .form-inner{
+  position: relative;
+  display: block;
+  margin-left: 30px;
+}
+
+.contact-section .form-inner .form-group{
+  position: relative;
+  display: block;
+  margin-bottom: 46px;
+}
+
+.contact-section .form-inner .form-group:last-child{
+  margin-bottom: 0px;
+}
+
+.contact-section .form-inner .form-group input[type='text'],
+.contact-section .form-inner .form-group input[type='email'],
+.contact-section .form-inner .form-group textarea{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 48px;
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  color: #444444;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #afafaf;
+  padding: 10px 0px;
+  transition: all 500ms ease;
+}
+
+.contact-section .form-inner .form-group textarea{
+  height: 145px;
+  resize: none;
+}
+
+.contact-section .form-inner .form-group input:focus,
+.contact-section .form-inner .form-group textarea:focus{
+  
+}
+
+
+/** contact-style-two **/
+
+.contact-style-two{
+  position: relative;
+  background: #f7f8fa;
+}
+
+.content_block_ten .content-box{
+  position: relative;
+  display: block;
+}
+
+.content_block_ten .content-box .sec-title{
+  margin-bottom: 21px;
+}
+
+.content_block_ten .content-box .text{
+  margin-bottom: 33px;
+}
+
+.content_block_ten .content-box .text p{
+  line-height: 28px;
+}
+
+.content_block_ten .content-box .support-box{
+  position: relative;
+  display: block;
+  padding: 7px 0px 11px 100px;
+  margin-bottom: 28px;
+}
+
+.content_block_ten .content-box .support-box .thumb-box{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+}
+
+.content_block_ten .content-box .support-box .thumb-box img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.content_block_ten .content-box .support-box span{
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  color: #444444;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.content_block_ten .content-box .support-box h3{
+  display: block;
+  font-size: 22px;
+  line-height: 26px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+.content_block_ten .content-box .support-box h3 a{
+  display: inline-block;
+  color: #001070;
+}
+
+.content_block_ten .content-box .support-box h3 a:hover{
+
+}
+
+.content_block_ten .content-box .info li{
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.content_block_ten .content-box .info li p{
+  line-height: 28px;
+}
+
+.content_block_ten .content-box .info li:last-child{
+  margin-bottom: 0px;
+}
+
+.content_block_ten .content-box .info li h5{
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #444;
+}
+
+.contact-style-two .form-inner{
+  position: relative;
+  display: block;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.contact-style-two .form-inner .form-group{
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.contact-style-two .form-inner .form-group:last-child{
+  margin-bottom: 0px;
+}
+
+.contact-style-two .form-inner .form-group input[type='text'],
+.contact-style-two .form-inner .form-group input[type='email'],
+.contact-style-two .form-inner .form-group textarea{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 58px;
+  background: #fff;
+  border: 1px solid #dbdcdd;
+  font-size: 18px;
+  color: #444444;
+  padding: 10px 28px;
+  transition: all 500ms ease;
+}
+
+.contact-style-two .form-inner .form-group input:focus,
+.contact-style-two .form-inner .form-group textarea:focus{
+
+}
+
+.contact-style-two .form-inner .form-group textarea{
+  height: 200px;
+  resize: none;
+}
+
+.contact-style-two .form-inner .form-group button{
+  width: 100%;
+}
+
+
+/** contact-style-three **/
+
+.contact-style-three{
+  position: relative;
+  background: #f4f5f9;
+}
+
+.contact-style-three .content-box{
+  position: relative;
+  display: block;
+}
+
+.contact-style-three .content-box .sec-title p{
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact-style-three .content-box .form-inner .form-group{
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.contact-style-three .content-box .form-inner .form-group:last-child{
+  margin-bottom: 0px;
+}
+
+.contact-style-three .content-box .form-inner .form-group input[type='text'],
+.contact-style-three .content-box .form-inner .form-group input[type='email'],
+.contact-style-three .content-box .form-inner .form-group textarea{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #e4e6ea;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #444;
+  transition: all 500ms ease;
+}
+
+.contact-style-three .content-box .form-inner .form-group textarea{
+  height: 100px;
+  resize: none;
+}
+
+.contact-style-three .content-box .form-inner .form-group .theme-btn{
+  width: 100%;
+}
+
+.contact-style-three .content-box .form-inner .form-group input:focus,
+.contact-style-three .content-box .form-inner .form-group textarea:focus{
+
+}
+
+.contact-style-three .map-inner{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+  border-left: 10px solid #fff;
+}
+
+.contact-style-three .map-inner iframe{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+/** contact-style-four **/
+
+.contact-style-four{
+  position: relative;
+  background: #ea3333;
+}
+
+.contact-style-four .bg-layer{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-style-four .content-column{
+  position: relative;
+  padding: 190px 30px 225px 210px;
+}
+
+.contact-style-four .content-box{
+  max-width: 570px;
+}
+
+.contact-style-four .content-box .sub-title{
+  color: #fff;
+}
+
+.contact-style-four .content-box .sub-title:before{
+  background: #fff;
+}
+
+.contact-style-four .content-box .sec-title p{
+  color: #fff;
+}
+
+.contact-style-four .content-box .form-inner .form-group{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contact-style-four .content-box .form-inner .form-group:last-child{
+  margin-bottom: 0px;
+}
+
+.contact-style-four .content-box .form-inner .form-group input[type='text'],
+.contact-style-four .content-box .form-inner .form-group input[type='email'],
+.contact-style-four .content-box .form-inner .form-group textarea{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #eaeaea;
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 500ms ease;
+}
+
+.contact-style-four .content-box .form-inner .form-group input:focus,
+.contact-style-four .content-box .form-inner .form-group textarea:focus{
+  border-color: #fff;
+}
+
+.contact-style-four .content-box .form-inner .form-group textarea{
+  height: 150px;
+  resize: none;
+}
+
+.contact-style-four .content-box .form-inner .form-group button[type='submit']{
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: 'Jost', sans-serif;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #fff;
+  padding: 17px 32px 14px 30px;
+  transition: all 500ms ease;
+}
+
+.contact-style-four .content-box .form-inner .form-group .theme-btn span{
+  padding-right: 34px;
+}
+
+.contact-style-four .content-box .form-inner .form-group .theme-btn span:before{
+  background-image: url(../../images/icons/icon-38.png);
+  width: 14px;
+  height: 14px;
+  top: 3px;
+}
+
+.contact-style-two.home-13{
+  background: #eff2f5;
+}
+
+.contact-style-two.home-13 .form-inner .form-group input[type='text'], 
+.contact-style-two.home-13 .form-inner .form-group input[type='email'], 
+.contact-style-two.home-13 .form-inner .form-group textarea{
+  border-radius: 8px;
+}
+
+.contact-style-two.home-13 .form-inner .form-group button{
+  border-radius: 5px;
+}
+
+
+.contact-page-section{
+  position: relative;
+  background: #f8f8f8;
+}
+
+.contact-page-section .form-inner .form-group{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contact-page-section .form-inner .form-group:last-child{
+  margin-bottom: 0px;
+}
+
+.contact-page-section .form-inner .form-group input,
+.contact-page-section .form-inner .form-group textarea{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #dedede;
+  font-size: 18px;
+  color: #797979;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 500ms ease;
+}
+
+.contact-page-section .form-inner .form-group textarea{
+  height: 120px;
+  resize: none;
+}
+
+.contact-page-section .form-inner .form-group input:focus,
+.contact-page-section .form-inner .form-group textarea:focus{
+
+}
+
+.contact-page-section .form-inner .form-group .theme-btn{
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.contact-page-section .info-inner{
+  position: relative;
+  display: block;
+  margin-top: -5px;
+}
+
+.contact-page-section .info-inner .upper-box{
+  position: relative;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #afadac;
+  margin-bottom: 31px;
+}
+
+.contact-page-section .info-inner .upper-box h2{
+  position: relative;
+  display: block;
+  font-size: 28px;
+  line-height: 36px;
+  color: #242424;
+  font-weight: 700;
+  padding-bottom: 14px;
+  margin-bottom: 31px;
+}
+
+.contact-page-section .info-inner .upper-box h2:before{
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 2px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.contact-page-section .info-inner .upper-box p{
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.contact-page-section .info-inner .upper-box a{
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  color: #444444;
+}
+
+.contact-page-section .info-inner .upper-box a:hover{
+
+}
+
+.contact-page-section .info-inner .lower-box h3{
+  display: block;
+  font-size: 24px;
+  line-height: 34px;
+  color: #242424;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.contact-page-section .info-inner .lower-box a{
+  display: inline-block;
+  font-size: 24px;
+  line-height: 34px;
+  font-family: var(--title-font);
+  color: #242424;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact-page-section .info-inner .lower-box a:hover{
+
+}
+
+.contact-page-section .info-inner .lower-box p{
+  line-height: 31px;
+  color: #242424;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
