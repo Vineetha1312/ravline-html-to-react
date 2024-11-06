@@ -971,6 +971,228 @@ img {
 
 
 
+Overlay styling
+.xs-sidebar-group .xs-overlay {
+  left: 0%;
+  top: 0;
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  transform: scaleX(0);
+  transform-origin: left center;
+  cursor: url(../images/icons/cross-out.png), pointer;
+  z-index: 9999999;
+  border-right: 1px solid rgba(255, 255, 255, 0.10);
+  transition: transform 0.65s 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+/* Overlay transition when sidebar is active */
+.xs-sidebar-group.isActive .xs-overlay {
+  transform: scaleX(1);
+  transition-delay: 0.03s;
+}
+
+/* Overlay layers with delayed animations */
+.xs-sidebar-group .xs-overlay-2 { left: 20%; transition-delay: 0.06s; }
+.xs-sidebar-group .xs-overlay-3 { left: 40%; transition-delay: 0.09s; }
+.xs-sidebar-group .xs-overlay-4 { left: 60%; transition-delay: 0.12s; }
+.xs-sidebar-group .xs-overlay-5 { left: 80%; transition-delay: 0.15s; }
+
+/* Sidebar container styling */
+.xs-sidebar-widget {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 460px;
+  z-index: 999999999;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  background-color: #fff;
+  transition: all 0.9s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Sidebar becomes visible when active */
+.xs-sidebar-group.isActive .xs-sidebar-widget {
+  opacity: 1;
+  visibility: visible;
+  right: 0;
+  transition: all 0.7s cubic-bezier(0.9, 0.03, 0, 0.96) 0.6s;
+}
+
+/* Content padding */
+.sidebar-textwidget {
+  padding: 50px 40px 50px 40px;
+}
+
+.widget-heading {
+  position: relative; /* Make the heading a relative container */
+}
+
+/* Close button styling */
+.xs-sidebar-group .close-side-widget {
+  position: absolute; /* Position the close button absolutely */
+right: 20px;
+    top: 60px;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  border: 1px solid #0e132d;
+  color: #0e132d;
+  border-radius: 50%;
+  font-weight: 400;
+  font-size: 20px;
+  transition: all 500ms ease;
+  background: none; /* No background */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Widget container styling */
+.sidebar-widget-container {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Show widget container when sidebar is active */
+.xs-sidebar-group.isActive .sidebar-widget-container {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Background color class */
+.xs-bg-black {
+  background-color: var(--secondary-color);
+}
+
+/* Logo container styling */
+.xs-sidebar-group .logo {
+  position: relative;
+  display: block;
+  padding-bottom: 25px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 25%;
+}
+
+/* Heading styling */
+.xs-sidebar-group h3 {
+  position: relative;
+  display: block;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: var(--text-font);
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+/* Text styling */
+.xs-sidebar-group .content-inner .text {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+
+/* Paragraph styling */
+.xs-sidebar-group .content-inner p {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  line-height: 28px;
+  font-family: 'Barlow', sans-serif;
+  color: #444444;
+  margin-bottom: 0;
+}
+
+/* Info box styling */
+.xs-sidebar-group .content-inner .info-box {
+  position: relative;
+  display: block;
+  margin-bottom: 48px;
+}
+
+/* Info list items */
+.xs-sidebar-group .content-inner .info-box .info li {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'Barlow', sans-serif;
+  color: #444;
+  padding-left: 47px;
+  margin-bottom: 25px;
+}
+
+/* Last item in the list without margin */
+.xs-sidebar-group .content-inner .info-box .info li:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Icon styling for list items */
+.xs-sidebar-group .content-inner .info-box .info li .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 30px;
+}
+
+/* Icon adjustment for specific items */
+.xs-sidebar-group .content-inner .info-box .info li:first-child .icon { top: 7px; }
+.xs-sidebar-group .content-inner .info-box .info li:nth-child(3) .icon { left: 8px; }
+
+/* Subscribe form styling */
+.xs-sidebar-group .subscribe-inner .form-group {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.xs-sidebar-group .subscribe-inner .form-group input[type="email"] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 56px;
+  border: 1px solid #e3dfdf;
+  background: #f8f8f8;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  color: #444444;
+  margin-bottom: 30px;
+  transition: all 500ms ease;
+}
+
+/* Email input focus effect */
+.xs-sidebar-group .subscribe-inner .form-group input:focus {
+  border-color: var(--theme-color);
+}
+
+/* Button styling */
+.xs-sidebar-group .subscribe-inner .form-group .theme-btn {
+  border-radius: 5px;
+}
+
+/* Link hover effects in the info box */
+.xs-sidebar-group .content-inner .info-box .info li a {
+  display: inline-block;
+  color: #444;
+}
+
+.xs-sidebar-group .content-inner .info-box .info li a:hover {
+  text-decoration: underline;
+  color: var(--theme-color);
+}
+
+
+.header-style-one{
+  top: 17px;
+}
 
 
 /** main-menu **/
