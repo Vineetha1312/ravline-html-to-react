@@ -2,6 +2,7 @@ import React from 'react'
 import { useState,useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import DateOfBirthPicker from '../components/DateOfBirth';
 
 export default function Appointment() {
 
@@ -53,7 +54,7 @@ useEffect(()=>{
                         <form method="post" action="index.html">
                             <div className="form-group">
                                 <fieldset>
-                                    <input type="search" className="form-control" name="search-input" defaultValue="Read-only content" placeholder="Type your keyword and hit" required />
+                                    <input type="search" className="form-control" name="search-input" value="" placeholder="Type your keyword and hit" required />
                                     <button type="submit"><i className="fas fa-search"></i></button>
                                 </fieldset>
                             </div>
@@ -98,13 +99,13 @@ useEffect(()=>{
                 <div className="row">
                     <div className="col-xl-9">
                         <div className="appointment-form-box">
-                            <form className="appointment-form" name="appointment-form" action="#" method="post">
+                            <form className="appointment-form" name="appointment-form" action="#" method="post" style={{textAlign:'left'}}>
                                <div className="form-box-single">
                                     <div className="single-box">
                                         <div className="inner-title">
                                             <h3>Name:</h3>
                                         </div>
-                                        <input type="text" name="f_name" defaultValue="Read-only content" placeholder="" required=""/>
+                                        <input type="text" name="f_name" value="" placeholder="" required=""/>
                                     </div>
 
                                     <div className="single-box">
@@ -112,8 +113,8 @@ useEffect(()=>{
                                             <h3>Address</h3>
                                         </div>
                                         <div className="jobsite-address">
-                                            <input type="text" name="f_jobsite_address" defaultValue="Read-only content" placeholder=""/>
-                                            <input type="text" name="f_jobsite_address" defaultValue="Read-only content" placeholder=""/>
+                                            <input type="text" name="f_jobsite_address" value="" placeholder=""/>
+                                            <input type="text" name="f_jobsite_address" value="" placeholder=""/>
                                         </div>
                                     </div>
                                     
@@ -123,7 +124,7 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>City</h3>
                                                 </div>
-                                                <input type="text" name="f_city" defaultValue="Read-only content" placeholder=""/>
+                                                <input type="text" name="f_city" value="" placeholder=""/>
                                             </div>    
                                         </div>
                                         <div className="col-xl-4">
@@ -131,7 +132,7 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>State</h3>
                                                 </div>
-                                                <select name="form_vehicle_make" className="selectpicker" data-width="100%">
+                                                <select name="form_vehicle_make" className="selectpicker" data-width="100%" style={{fontSize:'12px'}}>
                                                     <option selected="selected">State</option>
                                                     <option>Alabama</option>
                                                     <option>Florida</option>
@@ -145,7 +146,7 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>Zip Code</h3>
                                                 </div>
-                                                <input type="text" name="f_zipcode" defaultValue="Read-only content" placeholder=""/>
+                                                <input type="text" name="f_zipcode" value="" placeholder=""/>
                                             </div>    
                                         </div>
                                     </div>
@@ -156,7 +157,7 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>Phone number</h3>
                                                 </div>
-                                                <input type="text" name="f_phn_number" defaultValue="Read-only content" placeholder=""/>
+                                                <input type="text" name="f_phn_number" value="" placeholder=""/>
                                             </div>    
                                         </div> 
                                         <div className="col-xl-6">
@@ -164,7 +165,7 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>Email address</h3>
                                                 </div>
-                                                <input type="email" name="f_email" defaultValue="Read-only content" placeholder="" required=""/>
+                                                <input type="email" name="f_email" value="" placeholder="" required=""/>
                                             </div>   
                                         </div>     
                                     </div>
@@ -173,37 +174,21 @@ useEffect(()=>{
                                 <div className="form-box-single">
                                     <h4>Personal Information</h4>
                                     <div className="single-box">
-                                        <div className="inner-title pt_15">
-                                            <h3>Date of Birth</h3>
-                                        </div>
-                                        <div className="date-box clearfix">
-                                            <div className="calander-data">
-                                                <select id="dobday"></select>
-                                            </div>
-                                            <div className="calander-data">
-                                                <select id="dobmonth"></select>
-                                            </div>
-                                            <div className="calander-data">
-                                                <select id="dobyear"></select>
-                                            </div>
-                                            <div className="icon">
-                                                <img src="assets/images/icons/icon-204.png" alt=""/>
-                                            </div>
-                                        </div>
+                                      <DateOfBirthPicker/>
                                     </div>
                                     
                                     <div className="single-box">
                                         <div className="inner-title">
                                             <h3>Social Security Number</h3>
                                         </div>
-                                        <input type="text" name="f_company" defaultValue="Read-only content" placeholder=""/>
+                                        <input type="text" name="f_company" value="" placeholder=""/>
                                     </div>
                                     
                                     <div className="single-box">
                                         <div className="inner-title">
                                             <h3>Driver's License Number</h3>
                                         </div>
-                                        <input type="text" name="f_company" defaultValue="Read-only content" placeholder=""/>
+                                        <input type="text" name="f_company" value="" placeholder=""/>
                                     </div>
 
                                     <div className="row">
@@ -212,7 +197,7 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>Credit Card Information</h3>
                                                 </div>
-                                                <input type="text" name="f_phn_number" defaultValue="Read-only content" placeholder=""/>
+                                                <input type="text" name="f_phn_number" value="" placeholder=""/>
                                             </div>    
                                         </div> 
                                         <div className="col-xl-3">
@@ -220,7 +205,7 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>Exp</h3>
                                                 </div>
-                                                <input type="email" name="f_email" defaultValue="Read-only content" placeholder="" required=""/>
+                                                <input type="email" name="f_email" value="" placeholder="" required=""/>
                                             </div>   
                                         </div> 
                                         <div className="col-xl-3">
@@ -228,7 +213,7 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>CVV</h3>
                                                 </div>
-                                                <input type="email" name="f_email" defaultValue="Read-only content" placeholder="" required=""/>
+                                                <input type="email" name="f_email" value="" placeholder="" required=""/>
                                             </div>   
                                         </div>     
                                     </div>
@@ -242,7 +227,7 @@ useEffect(()=>{
                                         <div className="inner-title">
                                             <h3>Business Name:</h3>
                                         </div>
-                                        <input type="text" name="f_name" defaultValue="Read-only content" placeholder="" required=""/>
+                                        <input type="text" name="f_name" value="" placeholder="" required=""/>
                                     </div>
 
                                     <div className="single-box">
@@ -250,8 +235,8 @@ useEffect(()=>{
                                             <h3>Business Address</h3>
                                         </div>
                                         <div className="jobsite-address">
-                                            <input type="text" name="f_jobsite_address" defaultValue="Read-only content" placeholder=""/>
-                                            <input type="text" name="f_jobsite_address" defaultValue="Read-only content" placeholder=""/>
+                                            <input type="text" name="f_jobsite_address" value="" placeholder=""/>
+                                            <input type="text" name="f_jobsite_address" value="" placeholder=""/>
                                         </div>
                                     </div>
                                     
@@ -261,7 +246,7 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>City</h3>
                                                 </div>
-                                                <input type="text" name="f_city" defaultValue="Read-only content" placeholder=""/>
+                                                <input type="text" name="f_city" value="" placeholder=""/>
                                             </div>    
                                         </div>
                                         <div className="col-xl-4">
@@ -269,8 +254,8 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>State</h3>
                                                 </div>
-                                                <select name="form_vehicle_make" className="selectpicker" data-width="100%">
-                                                    <option selected="selected">State</option>
+                                                <select name="form_vehicle_make" className="selectpicker" data-width="100%" style={{fontSize:'12px'}}>
+                                                    <option selected="selected" >State</option>
                                                     <option>Alabama</option>
                                                     <option>Florida</option>
                                                     <option>Iowa</option>
@@ -283,7 +268,7 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>Zip Code</h3>
                                                 </div>
-                                                <input type="text" name="f_zipcode" defaultValue="Read-only content" placeholder=""/>
+                                                <input type="text" name="f_zipcode" value="" placeholder=""/>
                                             </div>    
                                         </div>
                                     </div>
@@ -294,7 +279,7 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>Business Phone number</h3>
                                                 </div>
-                                                <input type="text" name="f_phn_number" defaultValue="Read-only content" placeholder=""/>
+                                                <input type="text" name="f_phn_number" value="" placeholder=""/>
                                             </div>    
                                         </div> 
                                         <div className="col-xl-6">
@@ -302,7 +287,7 @@ useEffect(()=>{
                                                 <div className="inner-title">
                                                     <h3>EIN</h3>
                                                 </div>
-                                                <input type="email" name="f_email" defaultValue="Read-only content" placeholder="" required=""/>
+                                                <input type="email" name="f_email" value="" placeholder="" required=""/>
                                             </div>   
                                         </div>     
                                     </div>
@@ -343,7 +328,7 @@ useEffect(()=>{
                                         <div className="inner-title">
                                             <h3>Please describe any other banking needs:</h3>
                                         </div>
-                                        <input type="text" name="f_name" defaultValue="Read-only content" placeholder="" required=""/>
+                                        <input type="text" name="f_name" value="" placeholder="" required=""/>
                                     </div>
                                 </div>
 
@@ -370,7 +355,7 @@ useEffect(()=>{
                                         <div className="inner-title">
                                             <h3>Please describe any specific credit issues you'd like to address:</h3>
                                         </div>
-                                        <input type="text" name="f_name" defaultValue="Read-only content" placeholder="" required=""/>
+                                        <input type="text" name="f_name" value="" placeholder="" required=""/>
                                     </div>
 
                                     <div className="single-box mb-5">
@@ -397,13 +382,13 @@ useEffect(()=>{
                                         <div className="inner-title">
                                             <h3>Monthly Income</h3>
                                         </div>
-                                        <input type="text" name="f_name" defaultValue="Read-only content" placeholder="" required=""/>
+                                        <input type="text" name="f_name" value="" placeholder="" required=""/>
                                     </div>
                                     <div className="single-box">
                                         <div className="inner-title">
                                             <h3>Source of Income</h3>
                                         </div>
-                                        <input type="text" name="f_name" defaultValue="Read-only content" placeholder="" required=""/>
+                                        <input type="text" name="f_name" value="" placeholder="" required=""/>
                                     </div>
                                 </div>
 
@@ -429,7 +414,7 @@ useEffect(()=>{
                                         <div className="inner-title">
                                             <h3>Please list any outstanding balances:</h3>
                                         </div>
-                                        <input type="text" name="f_name" defaultValue="Read-only content" placeholder="" required=""/>
+                                        <input type="text" name="f_name" value="" placeholder="" required=""/>
                                     </div>
 
                                     <div className="single-box mb-5">
