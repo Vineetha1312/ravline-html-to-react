@@ -25,13 +25,13 @@ export default function Footer() {
                 <div className="widget-section">
                     <div className="row clearfix">
                         <div className="col-lg-4 col-md-6 col-sm-12 footer-column">
-                            <div className="footer-widget logo-widget mr_75">
+                            <div className="footer-widget logo-widget mr_75" style={{textAlign:'left'}}>
                                 <figure className="footer-logo"><Link to='/'><img src="assets/images/logo.png" alt=""/></Link></figure>
                                 <p>Your Trusted Partner in Financial, Business, and Insurance Consultation.</p>
                             </div>
                         </div>
                         <div className="col-lg-2 col-md-6 col-sm-12 footer-column">
-                            <div className="footer-widget links-widget">
+                            <div className="footer-widget links-widget" style={{textAlign:'left'}}>
                                 <div className="widget-title">
                                     <h3>Quick Links</h3>
                                 </div>
@@ -46,7 +46,7 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div className="col-lg-3 col-md-6 col-sm-12 footer-column" style={{textAlign:'left'}}>
                             <div className="footer-widget links-widget ml_50">
                                 <div className="widget-title">
                                     <h3>Protection Plans</h3>
@@ -62,7 +62,7 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-sm-12 footer-column">
+                        <div className="col-lg-3 col-md-6 col-sm-12 footer-column" style={{textAlign:'left'}}>
                             <div className="footer-widget contact-widget">
                                 <div className="widget-title">
                                     <h3>Get in Touch</h3>

@@ -94,7 +94,7 @@ function Sidebar({ isOpen, onClose }) {
                 <div className="icon" style={{ marginRight: '10px' }}>
                     <img src="assets/images/icons/icon-2.png" alt="Location" />
                 </div>
-                <span style={{ fontSize: '18px', color: '#343536', marginTop:'20px' }}>
+                <span style={{ fontSize: '18px', color: '#343536' }}>
                     9050 Pines Blvd, SUITE 450-3, Pembroke Pines, FL 33024
                 </span>
             </li>

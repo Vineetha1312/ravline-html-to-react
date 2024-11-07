@@ -165,7 +165,7 @@ export default function WealthEducation() {
     {/* testimonial-section end */}
     <section
       className="testimonial-section"
-      style={{ padding: '120px 0', backgroundColor: '#1A1A2E' }}
+      style={{ padding: '80px 0', backgroundColor: '#1A1A2E' }}
     >
       <div className="auto-container">
         <div className="row">
@@ -201,42 +201,42 @@ export default function WealthEducation() {
               >
                 What They’re Talking About Company?
               </h2>
-              <div style={{ display: 'flex', gap: '15px', marginTop: '20px' }}>
-                <button
-                  onClick={goToPrev}
-                  style={{
-                    width: '50px',
-                    height: '50px',
-                    borderRadius: '50%',
-                    background: 'transparent',
-                    border: '2px solid #A6A867',
-                    color: '#A6A867',
-                    fontSize: '1.2rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                >
-                  &#8592;
-                </button>
-                <button
-                  onClick={goToNext}
-                  style={{
-                    width: '50px',
-                    height: '50px',
-                    borderRadius: '50%',
-                    background: 'transparent',
-                    border: '2px solid #A6A867',
-                    color: '#A6A867',
-                    fontSize: '1.2rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                >
-                  &#8594;
-                </button>
-              </div>
+              <div style={{ display: 'flex', gap: '15px', marginTop: '20px', marginLeft:'40px'}}>
+    <button
+      onClick={goToPrev}
+      style={{
+        width: '50px',
+        height: '50px',
+        borderRadius: '50%',
+        background: 'transparent',
+        border: '2px solid #B1B1B1', // Updated to a light grey or white shade
+        color: '#B1B1B1',             // Updated to match icon color in the first image
+        fontSize: '1.2rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      &#8592;
+    </button>
+    <button
+      onClick={goToNext}
+      style={{
+        width: '50px',
+        height: '50px',
+        borderRadius: '50%',
+        background: 'transparent',
+        border: '2px solid #B1B1B1', // Updated to a light grey or white shade
+        color: '#B1B1B1',             // Updated to match icon color in the first image
+        fontSize: '1.2rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      &#8594;
+    </button>
+</div>
             </div>
           </div>
           {/* <div className="col-lg-8 col-md-12 content-column">
